@@ -1,0 +1,44 @@
+{
+  "project": {
+    "name": "primeng-learn"
+  },
+  "apps": [
+    {
+      "root": "src",
+      "outDir": "dist",
+      "assets": [
+        "assets",
+        "favicon.png"
+      ],
+      "index": "index.html",
+      "main": "main.ts",
+      "polyfills": "polyfills.ts",
+      "test": "test.ts",
+      "tsconfig": "tsconfig.app.json",
+      "testTsconfig": "tsconfig.spec.json",
+      "styles": [
+        "styles.css",
+        "../node_modules/fullcalendar/dist/fullcalendar.min.css",
+        "../node_modules/quill/dist/quill.snow.css",
+        "../node_modules/font-awesome/css/font-awesome.min.css"
+      ],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.js",
+        "../node_modules/moment/moment.js",
+        "../node_modules/chart.js/dist/Chart.js",
+        "../node_modules/fullcalendar/dist/fullcalendar.js",
+        "../node_modules/quill/dist/quill.js",
+        "../node_modules/prismjs/prism.js",
+        "../node_modules/prismjs/components/prism-typescript.js"
+      ],
+      "environmentSource": "environments/environment.ts",
+      "environments": {
+        "dev": "environments/environment.ts",
+        "prod": "environments/environment.prod.ts"
+      }
+    }
+  ],
+  "defaults": {
+    "styleExt": "scss"
+  }
+}
