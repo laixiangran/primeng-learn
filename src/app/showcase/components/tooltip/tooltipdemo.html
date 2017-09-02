@@ -18,7 +18,7 @@
             <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="bottom" placeholder="Bottom">
         </div>
         <div class="ui-g-12 ui-md-3">
-            <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="right" placeholder="Left">
+            <input type="text" pInputText pTooltip="Enter your username" tooltipPosition="left" placeholder="Left">
         </div>
     </div>
     
@@ -26,7 +26,7 @@
     <input type="text" pInputText pTooltip="Enter your username" placeholder="Right" tooltipEvent="focus" style="margin-left:.5em">
 </div>
 
-<div class="content-section source">
+<div class="content-section documentation">
     <p-tabView effect="fade">
         <p-tabPanel header="Documentation">
                     <h3>Import</h3>
@@ -156,6 +156,12 @@ import &#123;TooltipModule&#125; from 'primeng/primeng';
                             <td>true</td>
                             <td>By default the tooltip contents are rendered as text. Set to false to support html tags in the content</td>
                         </tr>
+                        <tr>
+                            <td>tooltipZIndex</td>
+                            <td>string</td>
+                            <td>auto</td>
+                            <td>Whether the z-index should be managed automatically to always go on top or have a fixed value.</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>
@@ -192,6 +198,10 @@ import &#123;TooltipModule&#125; from 'primeng/primeng';
         </p-tabPanel>
         
         <p-tabPanel header="Source">
+            <a href="https://github.com/primefaces/primeng/tree/master/src/app/showcase/components/tooltip" class="btn-viewsource" target="_blank">
+                <i class="fa fa-github"></i>
+                <span>View on GitHub</span>
+            </a>
 <pre>
 <code class="language-markup" pCode ngNonBindable>
 &lt;h3 class="first"&gt;Positions&lt;/h3&gt;
@@ -206,7 +216,7 @@ import &#123;TooltipModule&#125; from 'primeng/primeng';
         &lt;input type="text" pInputText pTooltip="Enter your username" tooltipPosition="bottom" placeholder="Bottom"&gt;
     &lt;/div&gt;
     &lt;div class="ui-g-12 ui-md-3"&gt;
-        &lt;input type="text" pInputText pTooltip="Enter your username" tooltipPosition="right" placeholder="Left"&gt;
+        &lt;input type="text" pInputText pTooltip="Enter your username" tooltipPosition="left" placeholder="Left"&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
